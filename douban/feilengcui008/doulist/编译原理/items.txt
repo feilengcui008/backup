@@ -1,0 +1,11 @@
+Parsing Techniques | https://book.douban.com/subject/4291903/
+Getting Started with LLVM Core Libraries | https://book.douban.com/subject/25906453/
+LLVM Cookbook中文版 | https://book.douban.com/subject/26820613/
+lex与yacc | https://book.douban.com/subject/1105363/
+flex与bison（中文版） | https://book.douban.com/subject/6109479/
+计算机程序的构造和解释 | https://book.douban.com/subject/1148282/
+计算的本质 | https://book.douban.com/subject/26148763/
+两周自制脚本语言 | https://book.douban.com/subject/25908672/
+自制编程语言 | https://book.douban.com/subject/25735333/
+编译原理 | https://book.douban.com/subject/3296317/
+编译器设计 | https://book.douban.com/subject/20436488/

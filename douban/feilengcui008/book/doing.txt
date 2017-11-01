@@ -1,0 +1,10 @@
+自我分析 | [美]卡伦·霍尼	（Karen Horney） / 贾静 / 译林出版社 / 2016-5  | 2017-10-30
+Deep Learning | Ian Goodfellow、Yoshua Bengio、Aaron Courville / The MIT Press / 2016-11-11  | 2017-10-27
+挑战程序设计竞赛 | 秋叶拓哉、岩田阳一、北川宜稔 / 巫泽俊、庄俊元、李津羽 / 人民邮电出版社 / 2013-7-1  | 2017-10-27
+沉默的大多数 | 王小波 / 湖南文艺出版社 / 2016-1  | 2017-10-24
+人间失格 | 太宰治 / 杨伟 / 作家出版社 / 2015-8-1  | 2017-10-24
+深入Linux内核架构 | Wolfgang Mauerer / 郭旭 / 人民邮电出版社 / 201005  | 2017-10-10
+The Linux Programming Interface | Michael Kerrisk / No Starch Press / April 2010  | 2017-10-09
+Hands-On Machine Learning with Scikit-Learn and TensorFlow | Aurélien Géron / O&#39;Reilly Media / 2017-1-25  | 2017-10-06
+Designing Data-Intensive Applications | Martin Kleppmann / O&#39;Reilly Media / 2017-4-2  | 2017-10-03
+算法 | Robert Sedgewick、Kevin Wayne / 人民邮电出版社 / 2012-3  | 2017-01-25

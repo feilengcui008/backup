@@ -1,0 +1,4 @@
+Data Structures and Algorithms in C++ | https://book.douban.com/subject/3929807/
+算法导论（原书第2版） | https://book.douban.com/subject/1885170/
+算法（第4版） | https://book.douban.com/subject/19952400/
+挑战程序设计竞赛 | https://book.douban.com/subject/24749842/

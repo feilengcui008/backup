@@ -1,0 +1,9 @@
+Hadoop 2.X HDFS源码剖析 | https://book.douban.com/subject/26755716/
+Designing Data-Intensive Applications | https://book.douban.com/subject/26197294/
+微服务设计 | https://book.douban.com/subject/26772677/
+Kubernetes权威指南 | https://book.douban.com/subject/26689184/
+Replication | https://book.douban.com/subject/5462128/
+ZooKeeper | https://book.douban.com/subject/25765743/
+从Paxos到Zookeeper | https://book.douban.com/subject/26292004/
+分布式系统原理与范型 | https://book.douban.com/subject/3108801/
+分布式系统概念与设计 | https://book.douban.com/subject/2698938/
