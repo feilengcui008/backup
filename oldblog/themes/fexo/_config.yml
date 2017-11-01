@@ -1,0 +1,186 @@
+# Blog info
+blog_name: feilengcui008
+slogan: Thinker, Creator and Programmer
+url: http://feilengcui008.github.io/
+
+# Set avatar (Absolute url and relative url)
+avatar: /images/avatar.jpg
+
+# Set favicon
+favicon: /favicon.ico
+
+# For seo
+keywords: Distributed Systems, Container, Linux, Machine Learning
+
+home_nav:
+  - name: Blog
+    url: /archives
+    target_blank: false #不在新页面打开
+  - name: About
+    url: /about
+    target_blank: false
+
+# config page nav
+page_nav:
+  - name: Home
+    url: /
+    target_blank: false
+  - name: Archives
+    url: /archives/
+    target_blank: false # 不在新页面打开
+  #- name: Categories
+  #  url: /categories/
+  #  target_blank: false
+  #- name: Tags
+  #  url: /tags/
+  #  target_blank: false
+  - name: About
+    url: /about/
+    target_blank: false
+
+page_nav_style: ROUND_RECT  # CIRCLE|ROUND_RECT
+
+# 面包屑
+breadcrumb:
+  isShow: false # true|fase
+
+# 盒子
+toolbox:
+  isShow: false # true|fase
+  text: M
+
+search_slogan:
+  isShow: false # true|fase
+  text: search
+
+link_slogan:
+  isShow: false # true|fase
+  text: feilengcui008@gmail.com
+
+
+# set backtop show or hide
+backtop:
+  home: true
+  archive: true
+  category: true
+  tag: true
+  post: true
+  link: false
+  about: false
+
+donation:
+  show: false
+  btn_text: 支持一下
+  tip: 扫一扫，支持feilengcui008
+  items:
+    - type: 微信
+      text: 微信扫一扫
+      imgUrl: /images/qr-wecha.png
+    - type: 支付宝
+      text: 支付宝扫一扫
+      imgUrl: /images/qr-alipa.png
+
+post:
+  header_align: CENTER # LEFT|CENTER
+  showToc: true # true|false
+  showComments: true
+  open_in_new_window: false
+  show_prev_next: false
+
+# =========================================================
+# 个性化设置
+# =========================================================
+
+# Custom CSS style, 推荐把样式文件放在blog源码文件夹，而不是主题里面
+personal_style: /css/personal-style.css
+
+# 这个值取决于你的背景图片是深色还是浅色，深色用dark，浅色用light
+home_background_scheme: light # dark、light
+
+# custom font-family 暂时只支持这3种英文字体，你可以完全自定义字体(看文档)
+blog_name_font_familiy: calligraffittiregular
+# blog_name_font_familiy: Lobster-Regular
+# blog_name_font_familiy: PoiretOne-Regular
+# blog_name_font_familiy: Go-Mono
+
+init_page_content: HOME_NAV  # HOME_NAV | POST
+
+
+# =========================================================
+# 第三方服务
+# =========================================================
+# Stats
+# google_analytics:
+baidu_analytics: 680ac17b792b826fa89a5e326d73e316
+
+# Comment service
+disqus_shortname: feilengcui008
+# duoshuo_shortname: feilengcui008
+# gentie_key: d16a7241e7cd4b389584ed8db2a4e8bc
+
+# 不算子,文章访问量统计和显示
+busuanzi: true
+
+# =========================================================
+# 页面内容设置
+# =========================================================
+custom_about: true
+about_flag: false
+about:
+  - type: me
+    icon: icon-user
+    text_value:
+    #- "I'm currently a second year CS graduate student at XJTU and I got my bachelor's degree from XJTU in EE at 2015. My current interest lies in distributed systems related areas and I'm also a machine learning learner. I have some knowledge and experience about container technology, linux server programming and web programming. Besides that, sometimes I'll play with linux kernel and programming languages a little bit :-)"
+    #- Thinker, Creator and Programmer
+    - "It's what you've done and you can do that defines you."
+  - type: mail
+    icon: icon-mail
+    text_key: Gmail
+    text_value: "@feilengcui008"
+    text_value_url: mailto:feilengcui008@gmail.com
+  - type: Github
+    icon: icon-github
+    text_key: Github
+    text_value: "@feilengcui008"
+    text_value_url: https://github.com/feilengcui008
+  - type: Douban
+    icon: icon-douban
+    text_key: Douban
+    text_value: "@feilengcui008"
+    text_value_url: https://www.douban.com/people/feilengcui008
+  - type: Zhihu
+    icon: icon-zhihu
+    text_key: Zhihu
+    text_value: "@feilengcui008"
+    text_value_url: https://www.zhihu.com/people/feilengcui008
+#  #- type: weibo
+#  #  icon: icon-weibo
+#  #  text_key: 微博
+#  #  text_value: "@feilengcui008"
+#  #  text_value_url: http://weibo.com/feilengcui008
+#  #- type: zhihu
+#  # icon: icon-zhihu
+#  #  text_key: 知乎
+#  #  text_value: "@feilengcui008"
+#  #  text_value_url: https://www.zhihu.com/people/feilengcui008
+#- type: csdn
+#    icon: icon-csdn
+#    text_key: Csdn
+#    text_value: "@feilengcui008"
+#    text_value_url: http://blog.csdn.net/feilengcui008
+
+link:
+  - name: linkedin
+    info: my linkedin page
+    url: https://www.linkedin.com/in/hongfei-tan-097163a8/
+    avatar: /images/avatar.png
+
+project:
+  - type: personal
+    name: cpp_server_framework
+    url: https://github.com/feilengcui008/cpp_server_framework
+    intro: a tiny Linux C++ server framework
+  - type: company
+    name: xxx
+    url: https://xxxx/
+    intro: xxxx
