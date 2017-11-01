@@ -1,0 +1,395 @@
+" ================================================================= "
+" //                   default system settings                   // "
+" ================================================================= "
+
+" startup mode: evim(vim -y)
+if v:progname =~? "evim"
+  finish
+endif
+
+" close some vi compatible support
+set nocompatible
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+" backup setting
+if has("vms")
+  set nobackup
+else
+  set backup
+endif
+
+" keep 50 lines of command line history
+set history=50
+
+" show the cursor position all the time
+set ruler
+
+" display incomplete commands
+set showcmd
+
+" do incremental searching
+set incsearch
+
+" don't use Ex mode, use Q for formatting
+map Q gq
+
+" CTRL-U in insert mode deletes a lot.
+" use CTRL-G u to first break undo, so
+" that you can undo CTRL-U after inserting
+" a line break.
+inoremap <C-U> <C-G>u<C-U>
+
+" in many terminal emulators the mouse
+" works just fine, thus enable it.
+if has('mouse')
+  set mouse=a
+endif
+
+" switch syntax highlighting on, when the
+" terminal has colors. Also switch on
+" highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  set hlsearch
+endif
+
+" only do this part when compiled with
+" support for autocommands.
+if has("autocmd")
+  " enable file type detection
+  filetype plugin indent on
+  " put these in an autocmd group
+  augroup vimrcEx
+  au!
+  " set textwidth to 78 characters for text
+  autocmd FileType text setlocal textwidth=78
+  " jump to the last known cursor position.
+  autocmd BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
+  augroup END
+else
+  " always set autoindenting on
+  set autoindent
+endif
+
+" command to see the difference between the
+" current buffer and the file it was loaded from
+if !exists(":DiffOrig")
+  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
+		  \ | wincmd p | diffthis
+endif
+
+
+
+" ================================================================= "
+" //                     vundle settings                         // "
+" ================================================================= "
+
+" close filetype detection
+filetype off
+
+" add runtime path
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'                                     " vundle vim plugin
+Plugin 'tpope/vim-fugitive'                                    " git wrapper
+Plugin 'L9'                                                    " utilities for programming in Vim
+Plugin 'bling/vim-airline'                                     " airline plugin
+Plugin 'airblade/vim-gitgutter'                                " show git status
+Plugin 'vim-scripts/winmanager'                                " window manager
+Plugin 'taglist.vim'                                           " ctags support
+Plugin 'scrooloose/nerdtree'                                   " file trees
+Plugin 'scrooloose/nerdcommenter'                              " comment tool
+Plugin 'Xuyuanp/nerdtree-git-plugin'                           " nerdtree git
+Plugin 'jistr/vim-nerdtree-tabs'                               " nerdtree tab
+Plugin 'ervandew/supertab'                                     " support for using <Tab> for autocomplete
+Plugin 'vim-scripts/AutoComplPop'                              " auto pop completion window
+Plugin 'honza/vim-snippets'                                    " code snippets
+Plugin 'SirVer/ultisnips'                                      " snippets engine supporting vim-snippets
+Plugin 'fatih/vim-go'                                          " go support with gocode daemon
+Plugin 'Valloric/YouCompleteMe'                                " syntax autocomplete for c/c++ etc
+Plugin 'Markdown-syntax'                                       " markdown
+Plugin 'altercation/vim-colors-solarized'                      " solarized theme
+Plugin 'blueshirts/darcula'                                    " darcula theme
+Plugin 'kien/ctrlp.vim'                                        " ctrl-p plugin
+Plugin 'rhysd/vim-clang-format'                                " clang-format support
+Plugin 'ervandew/eclim'                                        " eclim for java
+Plugin 'rbgrouleff/bclose.vim'                                 " close current buffer but not whole window
+Plugin 'jiangmiao/auto-pairs'                                  " auto pairs
+Plugin 'vim-syntastic/syntastic'                               " syntastic plugin
+call vundle#end()
+
+" reopen filetype plugin
+filetype plugin indent on
+
+
+
+
+" ================================================================= "
+" //                     personal settings                       // "
+" ================================================================= "
+
+" show line number
+set nu
+
+" do not backup file
+set nobackup
+
+" color mode
+set t_Co=256
+
+" background mode
+set background=dark
+
+" color theme
+color darcula
+
+" color scheme
+"colorscheme solarized
+
+" number of spaces for a tab
+set tabstop=4
+
+" number of spaces for each auto indent
+set shiftwidth=4
+
+" use spaces to replace tab
+set expandtab
+
+" ctag settings
+set tags=tags
+set tags+=./tags;/
+
+" encodings and settings in gui env
+"set encoding=utf-8                                            " encoding used inside vim
+"set fileencoding=utf-8                                        " encoding for file content, auto converted when write file
+"set termencoding=utf-8                                        " terminal encoding from keybord input
+"set guioptions-=m                                             " menu bar
+"set guioptions-=T                                             " tool bar
+"set guioptions-=r                                             " right-hand scrollbar always
+"set guioptions-=L                                             " left-hand scrollbar when window is splitted
+"set guifont=Consolas:h12                                      " font family and font size
+
+" run when start vim
+"if has('autocmd')
+"    autocmd VimEnter * StartUp
+"endif
+
+function! s:start_up()
+    WMToggle
+    " only start a terminal in neovim mode
+    if has('nvim')
+        vsplit
+        wincmd l
+        terminal
+        vertical resize 0
+        stopinsert
+        wincmd h
+    endif
+endfunction
+command! StartUp call s:start_up()
+
+" switch to window by name regex
+function! s:win_by_bufname(bufname)
+    let bufmap = map(range(1, winnr('$')), '[bufname(winbufnr(v:val)), v:val]')
+    let thewindow = filter(bufmap, 'v:val[0] =~ a:bufname')[0][1]
+    execute thewindow 'wincmd w'
+endfunction
+command! -nargs=* WinGo call s:win_by_bufname(<q-args>)
+
+" switch to lastest accessed window
+function! s:last_window()
+    call feedkeys("\<C-w>\<C-p>")
+endfunction
+command! LastWindow call s:last_window()
+
+" switch to lastest accessed window
+function! s:left_window()
+    wincmd h
+endfunction
+command! LeftWindow call s:left_window()
+
+" for neovim terminal
+if has('nvim')
+    " hide terminal(currently col size to zero)
+    function! s:hide_terminal()
+        WinGo term
+        vertical resize 0
+        LeftWindow
+    endfunction
+    command! HideTerminal call s:hide_terminal()
+
+    " show terminal
+    function! s:show_terminal()
+        WinGo term
+        vertical resize 40
+    endfunction
+    command! ShowTerminal call s:show_terminal()
+
+    " terminal toggle
+    let g:terminal_status=0
+    function! s:toggle_terminal()
+        if g:terminal_status
+            HideTerminal
+            let g:terminal_status=0
+        else
+            ShowTerminal
+            let g:terminal_status=1
+        endif
+    endfunction
+    command! ToggleTerminal call s:toggle_terminal()
+endif
+
+
+" map <F5> to remove EOL space
+noremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
+" map buffer ops
+noremap bn :bnext<CR>
+noremap bp :bprevious<CR>
+noremap bl :buffers<CR>
+noremap bc :Bclose<CR>
+
+" map tab ops
+noremap tn :tabnew<CR>
+noremap tc :tabclose<CR>
+noremap tl :tabs<CR>
+noremap gt :tabnext<CR>
+noremap gT :tabprevious<CR>
+noremap <C-PageDown> :tabnext<CR>
+noremap <C-PageUp> :tabprevious<CR>
+
+" window ops
+noremap <M-Bslash> :vsplit<CR>
+noremap <M--> :split<CR>
+noremap <C-w><Bslash> :vsplit<CR>
+noremap <C-w>- :split<CR>
+noremap <M-Up> <C-w><Up>
+noremap <M-Down> <C-w><Down>
+noremap <M-Left> <C-w><Left>
+noremap <M-Right> <C-w><Right>
+noremap <M-x> :q<CR>
+noremap <C-w>x :q<CR>
+noremap <C-b> <C-w>
+
+" only for neovim terminal
+if has('nvim')
+    tnoremap <Esc> <C-\><C-n>
+    noremap <S-t> :ToggleTerminal<CR>
+endif
+
+" cursorline, cursorcolumn and colorcolumn
+set cursorline
+set cursorcolumn
+autocmd InsertEnter * highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=grey guibg=NONE guifg=NONE
+autocmd InsertEnter * highlight CursorColumn cterm=NONE ctermbg=NONE ctermfg=grey guibg=NONE guifg=NONE
+autocmd InsertLeave * highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+autocmd InsertLeave * highlight CursorColumn cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+highlight ColorColumn guibg=Red ctermbg=Red
+set colorcolumn=80
+highlight OverLength ctermbg=grey ctermfg=white guibg=#592929
+match OverLength /\%<101v.\%>100v/
+"match OverLength /\%101v.\+/
+
+
+
+" ================================================================= "
+" //                     plugin settings                         // "
+" ================================================================= "
+
+" window manager layout
+" let g:winManagerWindowLayout="TagList|FileExplorer"
+let g:winManagerWindowLayout="FileExplorer"
+let g:winManagerWidth=20
+noremap wm :WMToggle<CR>
+
+" airline options
+set laststatus=2                                               " always show status on the last window
+let g:airline_section_b='%{fugitive#statusline()}'             " airline vim-fugitive git branch status
+let g:airline_section_c='%{strftime("%c")}'                    " airline time
+let g:airline#extensions#tabline#enabled=1                     " tabline
+let g:airline_theme="hybrid"                                   " airline theme
+
+
+" YouCompleteMe settings
+let g:ycm_global_ycm_extra_conf="~/.vim/.ycm_extra_conf.py"
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+let g:ycm_confirm_extra_conf=0
+
+" popup preview window for autocomplete
+set completeopt=longest,menu
+
+" supertab default compeletion type
+let g:SuperTabDefaultCompletionType='context'
+
+" eclim related settings.
+" when use eclim, remove YouCompleteMe
+"let g:EclimCompletionMethod='omnifunc'
+"set runtimepath-=~/.vim/bundle/YouCompleteMe
+
+
+" gitgutter settings
+let g:gitgutter_real_time=1
+let g:gitgutter_eager=1
+
+
+" clang-format settings
+let g:clang_format#code_style="Google"
+let g:clang_format#detect_style_file=1
+let g:clang_format#auto_format=1
+let g:clang_format#auto_format_on_insert_leave=1
+let g:clang_format#auto_formatexpr=1
+noremap <C-S-i> :ClangFormat<CR>
+
+" nerdtree settings
+let g:NERDTreeDirArrowExpandable="+"
+let g:NERDTreeDirArrowCollapsible="-"
+" double left click open files in new tab
+fun! s:MyNERDTreeSetting()
+  fun! s:DoubleClickBehavior()
+    if match(getline('.'), '+') == -1 && match(getline('.'), '-') == -1
+      map <buffer> <2-LeftMouse> t
+    else
+      map <buffer> <2-LeftMouse> o
+    endif
+  endfun
+  autocmd CursorMoved * call s:DoubleClickBehavior()
+endfun
+autocmd WinEnter * if &ft == 'nerdtree' | call s:MyNERDTreeSetting() | endif
+
+" nerdtree git plugin settings
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified" : "~",
+    \ "Staged"    : "+",
+    \ "Untracked" : "*",
+    \ "Renamed"   : ">>",
+    \ "Unmerged"  : "=",
+    \ "Deleted"   : "-",
+    \ "Dirty"     : "x",
+    \ "Clean"     : "",
+    \ "Unknown"   : "?"
+    \}
+
+" auto open nerdtree in new tab
+let g:nerdtree_tabs_open_on_console_startup=1
+
+" syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+noremap <C-S-c> :SyntasticCheck<CR>
+func! Syntastic_check()
+    SyntasticCheck
+endfunction
+" fix syntastic auto check on write with nerdtree-git-plugin
+autocmd BufWritePost * call Syntastic_check()
