@@ -1,3 +1,4 @@
+设计模式之禅 | https://book.douban.com/subject/4260618/
 sed与awk | https://book.douban.com/subject/1236944/
 The AWK Programming Language | https://book.douban.com/subject/1876898/
 Git Internals | https://book.douban.com/subject/24752672/
