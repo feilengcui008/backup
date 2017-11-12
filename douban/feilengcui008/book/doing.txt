@@ -1,5 +1,6 @@
+我们内心的冲突 | 卡伦·霍尼 / 王作虹 译、陈维正 校 / 译林出版社 / 2011-7  | 2017-11-11
+富爸爸，穷爸爸 | （美）罗伯特・T・清崎、莎伦・L・莱希特 / 杨君，杨明 / 世界图书出版公司 / 2000-09  | 2017-11-10
 重新定义公司 | [美]埃里克·施密特 / 靳婷婷、陈序、何晔 / 中信出版社 / 2015-8  | 2017-11-06
-支付战争 | 埃里克•杰克逊 / 徐彬、王晓、清华大学五道口金融学院未央研究  审译 / 中信出版社 / 2015-5-19  | 2017-11-05
 百年孤独 | [哥伦比亚] 加西亚·马尔克斯 / 范晔 / 南海出版公司 / 2011-6  | 2017-11-03
 Deep Learning | Ian Goodfellow、Yoshua Bengio、Aaron Courville / The MIT Press / 2016-11-11  | 2017-10-27
 挑战程序设计竞赛 | 秋叶拓哉、岩田阳一、北川宜稔 / 巫泽俊、庄俊元、李津羽 / 人民邮电出版社 / 2013-7-1  | 2017-10-27
@@ -9,4 +10,3 @@ Deep Learning | Ian Goodfellow、Yoshua Bengio、Aaron Courville / The MIT Press
 The Linux Programming Interface | Michael Kerrisk / No Starch Press / April 2010  | 2017-10-09
 Hands-On Machine Learning with Scikit-Learn and TensorFlow | Aurélien Géron / O&#39;Reilly Media / 2017-1-25  | 2017-10-06
 Designing Data-Intensive Applications | Martin Kleppmann / O&#39;Reilly Media / 2017-4-2  | 2017-10-03
-算法 | Robert Sedgewick、Kevin Wayne / 人民邮电出版社 / 2012-3  | 2017-01-25

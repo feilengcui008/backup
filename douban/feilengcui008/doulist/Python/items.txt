@@ -1,3 +1,5 @@
+Python高级编程 | https://book.douban.com/subject/4212921/
+Python网络编程（第3版） | https://book.douban.com/subject/26869212/
 The Definitive Guide to Django, 2nd Edition | https://book.douban.com/subject/3617254/
 Introduction to Tornado | https://book.douban.com/subject/7906788/
 Flask Web开发：基于Python的Web应用开发实战 | https://book.douban.com/subject/26274202/
