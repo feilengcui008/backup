@@ -2,7 +2,6 @@ Cloud Native Go：构建基于Go和React的云原生Web应用与微服务 | http
 生产微服务 | https://book.douban.com/subject/27127050/
 Spring Cloud微服务实战 | https://book.douban.com/subject/27025912/
 Microservice Patterns | https://book.douban.com/subject/26989027/
-从零到百亿互联网金融架构发展史 - 文章 - 伯乐在线 | https://www.douban.com/url/7631411/
 高并发下的下单功能设计 (8) | https://www.douban.com/url/7631255/
 Quora’s Technology Examined | Big Fast Blog | https://www.douban.com/url/7631213/
 The Architecture Twitter Uses to Deal with 150M Active Users, 300K QPS, a 22 MB/S Firehose, and Send Tweets in Under 5 Seconds - High Scalability - | https://www.douban.com/url/7631208/
@@ -23,3 +22,4 @@ checkcheckzz/system-design-interview | https://www.douban.com/url/7631115/
 Spring Cloud与Docker微服务架构实战 | https://book.douban.com/subject/27028228/
 微服务设计 | https://book.douban.com/subject/26772677/
 架构即未来：现代企业可扩展的Web架构、流程和组织(原书第2版) | https://book.douban.com/subject/26765979/
+Principles of Computer System Design | https://book.douban.com/subject/3707841/

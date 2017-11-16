@@ -12,3 +12,12 @@ Neural Networks and Deep Learning | https://book.douban.com/subject/26727997/
 机器学习实战 | https://book.douban.com/subject/24703171/
 集体智慧编程 | https://book.douban.com/subject/26348921/
 推荐系统实践 | https://book.douban.com/subject/10769749/
+智能Web算法 | https://book.douban.com/subject/6545083/
+机器学习 | https://book.douban.com/subject/1102235/
+利用Python进行数据分析 | https://book.douban.com/subject/25779298/
+Scikit-Learn与TensorFlow机器学习实用指南（影印版） | https://book.douban.com/subject/27154347/
+Scikit-Learn Cookbook | https://book.douban.com/subject/26279422/
+Mastering Machine Learning With scikit-learn | https://book.douban.com/subject/26281221/
+Tensorflow：实战Google深度学习框架 | https://book.douban.com/subject/26976457/
+数据科学实战 | https://book.douban.com/subject/26320485/
+这就是搜索引擎 | https://book.douban.com/subject/7006719/
