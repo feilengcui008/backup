@@ -1,0 +1,25 @@
+lex与yacc | https://book.douban.com/subject/1105363/
+计算机程序的构造和解释 | https://book.douban.com/subject/1148282/
+计算的本质 | https://book.douban.com/subject/26148763/
+两周自制脚本语言 | https://book.douban.com/subject/25908672/
+自制编程语言 | https://book.douban.com/subject/25735333/
+编译原理 | https://book.douban.com/subject/3296317/
+编译器设计 | https://book.douban.com/subject/20436488/
+Parsing Techniques | https://book.douban.com/subject/4291903/
+编程语言实现模式 | https://book.douban.com/subject/10482195/
+The Go Programming Language | https://book.douban.com/subject/26337545/
+Go语言学习笔记 | https://book.douban.com/subject/26832468/
+Go语言实战 | https://book.douban.com/subject/27015617/
+Go Web编程 | https://book.douban.com/subject/24316255/
+Go语言编程 | https://book.douban.com/subject/11577300/
+The Way To Go | https://book.douban.com/subject/10558892/
+Mastering Concurrency in Go | https://book.douban.com/subject/25959823/
+Network Programming with Go | https://book.douban.com/subject/27003773/
+Microservices in Go | https://book.douban.com/subject/26650145/
+The C++ Programming Language | https://book.douban.com/subject/24859590/
+C++ Primer 中文版（第 5 版） | https://book.douban.com/subject/25708312/
+深度探索C++对象模型 | https://book.douban.com/subject/10427315/
+STL源码剖析 | https://book.douban.com/subject/1110934/
+深入实践C++模板编程 | https://book.douban.com/subject/24745211/
+Effective C++ | https://book.douban.com/subject/1842426/
+More Effective C++中文版 | https://book.douban.com/subject/1241385/

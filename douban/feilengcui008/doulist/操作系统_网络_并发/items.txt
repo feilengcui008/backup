@@ -20,3 +20,6 @@ Seven Concurrency Models in Seven Weeks | https://book.douban.com/subject/257366
 A Primer on Memory Consistency and Cache Coherence | https://book.douban.com/subject/6829746/
 多处理器编程的艺术 | https://book.douban.com/subject/24700553/
 Is Parallel Programming Hard, And, If So, What Can You Do About It? | https://book.douban.com/subject/6957175/
+计算机体系结构 | https://book.douban.com/subject/7006537/
+Intel® 64 and IA-32 Architectures Software Developer&#39;s Manual | https://book.douban.com/subject/3990545/
+编码 | https://book.douban.com/subject/4822685/

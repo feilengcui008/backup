@@ -1,17 +1,13 @@
+普林斯顿微积分读本 | https://book.douban.com/subject/4926707/
+概率论及其应用 | https://book.douban.com/subject/1785817/
+概率论沉思录 | https://book.douban.com/subject/3629804/
 Graph Theory (Graduate Texts in Mathematics) | https://book.douban.com/subject/3014979/
 离散数学及其应用（原书第5版） | https://book.douban.com/subject/2130743/
 数论概论 | https://book.douban.com/subject/3099540/
 高等近世代数 | https://book.douban.com/subject/1953795/
-数理逻辑 | https://book.douban.com/subject/2098492/
-集合论基础 | https://book.douban.com/subject/1801399/
-数值方法和MATLAB实现与应用 | https://book.douban.com/subject/1184779/
-非线性优化计算方法 | https://book.douban.com/subject/3007147/
 A Course in Game Theory | https://book.douban.com/subject/1466989/
 数学分析 | https://book.douban.com/subject/1684020/
-信息论基础 | https://book.douban.com/subject/2305237/
 Mathematics for Computer Science | https://book.douban.com/subject/20472991/
-A First Course in Logic | https://book.douban.com/subject/2357199/
-组合优化 | https://book.douban.com/subject/6041508/
 Introduction to Linear Algebra, Fourth Edition | https://book.douban.com/subject/3582335/
 组合数学 | https://book.douban.com/subject/1231452/
 具体数学 | https://book.douban.com/subject/21323941/
