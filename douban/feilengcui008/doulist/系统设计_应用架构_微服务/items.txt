@@ -23,3 +23,4 @@ Spring Cloud与Docker微服务架构实战 | https://book.douban.com/subject/270
 微服务设计 | https://book.douban.com/subject/26772677/
 架构即未来：现代企业可扩展的Web架构、流程和组织(原书第2版) | https://book.douban.com/subject/26765979/
 Principles of Computer System Design | https://book.douban.com/subject/3707841/
+Designing Data-Intensive Applications | https://book.douban.com/subject/26197294/
