@@ -13,13 +13,6 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-" backup setting
-if has("vms")
-  set nobackup
-else
-  set backup
-endif
-
 " keep 50 lines of command line history
 set history=50
 
@@ -109,16 +102,16 @@ Plugin 'scrooloose/nerdcommenter'                              " comment tool
 Plugin 'Xuyuanp/nerdtree-git-plugin'                           " nerdtree git
 Plugin 'jistr/vim-nerdtree-tabs'                               " nerdtree tab
 Plugin 'ervandew/supertab'                                     " support for using <Tab> for autocomplete
-"Plugin 'vim-scripts/AutoComplPop'                              " auto pop completion window
+Plugin 'vim-scripts/AutoComplPop'                              " auto pop completion window
 Plugin 'honza/vim-snippets'                                    " code snippets
 Plugin 'SirVer/ultisnips'                                      " snippets engine supporting vim-snippets
 Plugin 'fatih/vim-go'                                          " go support with gocode daemon
-Plugin 'Valloric/YouCompleteMe'                                " syntax autocomplete for c/c++ etc
+"Plugin 'Valloric/YouCompleteMe'                                " syntax autocomplete for c/c++ etc
 Plugin 'Markdown-syntax'                                       " markdown
 Plugin 'altercation/vim-colors-solarized'                      " solarized theme
 Plugin 'blueshirts/darcula'                                    " darcula theme
 Plugin 'kien/ctrlp.vim'                                        " ctrl-p plugin
-Plugin 'rhysd/vim-clang-format'                                " clang-format support
+"Plugin 'rhysd/vim-clang-format'                                " clang-format support
 "Plugin 'ervandew/eclim'                                        " eclim for java
 Plugin 'rbgrouleff/bclose.vim'                                 " close current buffer but not whole window
 Plugin 'jiangmiao/auto-pairs'                                  " auto pairs
@@ -167,14 +160,19 @@ set tags=tags
 set tags+=./tags;/
 
 " encodings and settings in gui env
-"set encoding=utf-8                                            " encoding used inside vim
-"set fileencoding=utf-8                                        " encoding for file content, auto converted when write file
-"set termencoding=utf-8                                        " terminal encoding from keybord input
-"set guioptions-=m                                             " menu bar
-"set guioptions-=T                                             " tool bar
-"set guioptions-=r                                             " right-hand scrollbar always
-"set guioptions-=L                                             " left-hand scrollbar when window is splitted
-"set guifont=Consolas:h12                                      " font family and font size
+set encoding=utf-8                                 " encoding used inside vim
+set fileencoding=utf-8                             " encoding for file content, auto converted when write file
+set termencoding=utf-8                             " terminal encoding from keybord input
+set langmenu=zh_CN.UTF-8                           " menu language encoding
+source $VIMRUNTIME/delmenu.vim                     " delete old menu first
+source $VIMRUNTIME/menu.vim                        " recreate menu
+language messages zh_CN.utf-8                      " notice message
+"set guioptions-=m                                 " menu bar
+set guioptions-=T                                  " tool bar
+"set guioptions-=r                                 " right-hand scrollbar always
+"set guioptions-=L                                 " left-hand scrollbar when window is splitted
+"set guifont=Consolas:h12                          " font family and font size
+set guifont=Go\ Mono:h11                           " font family and font size
 
 " run when start vim
 "if has('autocmd')
@@ -316,12 +314,11 @@ let g:airline_section_c='%{strftime("%c")}'                    " airline time
 let g:airline#extensions#tabline#enabled=1                     " tabline
 let g:airline_theme="hybrid"                                   " airline theme
 
-
 " YouCompleteMe settings
-let g:ycm_global_ycm_extra_conf="~/.vim/.ycm_extra_conf.py"
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
-let g:ycm_confirm_extra_conf=0
+"let g:ycm_global_ycm_extra_conf="~/.vim/.ycm_extra_conf.py"
+"let g:ycm_key_list_select_completion=[]
+"let g:ycm_key_list_previous_completion=[]
+"let g:ycm_confirm_extra_conf=0
 
 " popup preview window for autocomplete
 set completeopt=longest,menu
@@ -334,11 +331,9 @@ let g:SuperTabDefaultCompletionType='context'
 "let g:EclimCompletionMethod='omnifunc'
 "set runtimepath-=~/.vim/bundle/YouCompleteMe
 
-
 " gitgutter settings
 let g:gitgutter_real_time=1
 let g:gitgutter_eager=1
-
 
 " clang-format settings
 let g:clang_format#code_style="Google"
@@ -346,7 +341,7 @@ let g:clang_format#code_style="Google"
 "let g:clang_format#auto_format=0
 "let g:clang_format#auto_format_on_insert_leave=0
 "let g:clang_format#auto_formatexpr=0
-noremap <C-S-i> :ClangFormat<CR>
+"noremap <C-S-i> :ClangFormat<CR>
 
 " nerdtree settings
 let g:NERDTreeDirArrowExpandable="+"
