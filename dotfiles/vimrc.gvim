@@ -173,6 +173,7 @@ set guioptions-=T                                  " tool bar
 "set guioptions-=L                                 " left-hand scrollbar when window is splitted
 "set guifont=Consolas:h12                          " font family and font size
 set guifont=Go\ Mono:h11                           " font family and font size
+set fileformats=unix,dos                           " use unix style line ending
 
 " run when start vim
 "if has('autocmd')
