@@ -1,4 +1,3 @@
-云原生应用架构实践 | https://book.douban.com/subject/27091064/
 开源容器云OpenShift | https://book.douban.com/subject/27088186/
 SRE: Google运维解密 | https://book.douban.com/subject/26875239/
 Effective DevOps | https://book.douban.com/subject/26631259/
