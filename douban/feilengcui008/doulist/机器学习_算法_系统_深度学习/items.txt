@@ -20,5 +20,5 @@ Scikit-Learn Cookbook | https://book.douban.com/subject/26279422/
 Mastering Machine Learning With scikit-learn | https://book.douban.com/subject/26281221/
 Tensorflow：实战Google深度学习框架 | https://book.douban.com/subject/26976457/
 数据科学实战 | https://book.douban.com/subject/26320485/
-这就是搜索引擎 | https://book.douban.com/subject/7006719/
 Pro Deep Learning with TensorFlow | https://book.douban.com/subject/27203218/
+Deep Learning with Python | https://book.douban.com/subject/27038207/
