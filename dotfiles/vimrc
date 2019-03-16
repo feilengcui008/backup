@@ -123,6 +123,7 @@ Plugin 'rhysd/vim-clang-format'                                " clang-format su
 Plugin 'rbgrouleff/bclose.vim'                                 " close current buffer but not whole window
 Plugin 'jiangmiao/auto-pairs'                                  " auto pairs
 Plugin 'vim-syntastic/syntastic'                               " syntastic plugin
+Plugin 'nvie/vim-flake8'                                       " python flake8
 call vundle#end()
 
 " reopen filetype plugin
@@ -394,3 +395,6 @@ func! Syntastic_check()
 endfunction
 " fix syntastic auto check on write with nerdtree-git-plugin
 "autocmd BufWritePost * call Syntastic_check()
+
+" python syntax check on save file
+autocmd BufWritePost *.py call Flake8()
