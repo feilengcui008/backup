@@ -1,2 +1,7 @@
+北京挂号 | 2020-02-05 13:00:37 | https://www.douban.com/note/751108746/
+PaaS、服务管理和资源管理 | 2019-12-08 22:22:12 | https://www.douban.com/note/744761119/
+面向场景 | 2019-11-17 15:12:46 | https://www.douban.com/note/742241618/
+项目整体和细节把控 | 2019-10-20 20:56:55 | https://www.douban.com/note/738818254/
+系统（项目）生命周期 | 2019-08-06 15:15:18 | https://www.douban.com/note/729144593/
 读在2017 | 2017-12-31 18:02:32 | https://www.douban.com/note/651246726/
 豆瓣备份工具 | 2017-10-16 16:50:51 | https://www.douban.com/note/641291857/

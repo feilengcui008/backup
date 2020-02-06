@@ -12,7 +12,11 @@ import BeautifulSoup as bs
 class DoubanBackuper(object): 
     cookie_str = ""
     cookies_dict = {}
-    login_url = "https://www.douban.com/accounts/login"
+    domain = "https://www.douban.com"
+    book_sub_domain = "https://book.douban.com"
+    movie_sub_domain = "https://movie.douban.com"
+    music_sub_domain = "https://music.douban.com"
+    login_url = domain + "/accounts/login"
     rating_level_map = {
             "rating1-t": "*",
             "rating2-t": "**",
@@ -51,12 +55,14 @@ class DoubanBackuper(object):
         self.cookies_dict = resp.history[0].cookies.get_dict()
 
     def _get_with_cookie(self, url):
+        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0"}
         resp = None
         if not self.login:
             resp = requests.get(url)
         else:
             if len(self.cookie_str) > 0:
-                resp = requests.get(url, headers={"Cookie": self.cookie_str})
+                headers['Cookie'] = self.cookie_str
+                resp = requests.get(url, headers=headers)
             else:
                 resp = requests.get(url, cookies = self.cookies_dict)
         if resp is None or resp.status_code != 200:
@@ -74,9 +80,9 @@ class DoubanBackuper(object):
         self.backup_note()
 
     def backup_book(self):
-        read_url = "https://book.douban.com/people/%s/collect" % (self.username,)
-        wish_url = "https://book.douban.com/people/%s/wish" % (self.username,)
-        reading_url = "https://book.douban.com/people/%s/do" % (self.username,)
+        read_url = "%s/people/%s/collect" % (self.book_sub_domain, self.username)
+        wish_url = "%s/people/%s/wish" % (self.book_sub_domain, self.username)
+        reading_url = "%s/people/%s/do" % (self.book_sub_domain, self.username)
         book_dir = os.path.join(self.root, "book")
         if not os.path.exists(book_dir):
             os.mkdir(book_dir)
@@ -95,7 +101,7 @@ class DoubanBackuper(object):
             bsp = bs.BeautifulSoup(resp.content)
             next_pages = bsp.findAll("link", attrs={"rel": "next"})
             if len(next_pages) > 0:
-                url = next_pages[0].attrMap["href"]
+                url = "%s%s" % (self.book_sub_domain, next_pages[0].attrMap["href"])
             else:
                 url = None
             # find all books in this page
@@ -138,9 +144,9 @@ class DoubanBackuper(object):
             fp.write(buf.encode("utf-8"))
 
     def backup_video(self):
-        watched_url = "https://movie.douban.com/people/%s/collect" % (self.username,)
-        wish_url = "https://movie.douban.com/people/%s/wish" % (self.username,)
-        watching_url = "https://movie.douban.com/people/%s/do" % (self.username,)
+        watched_url = "%s/people/%s/collect" % (self.movie_sub_domain, self.username)
+        wish_url = "%s/people/%s/wish" % (self.movie_sub_domain, self.username)
+        watching_url = "%s/people/%s/do" % (self.movie_sub_domain, self.username)
         video_dir = os.path.join(self.root, "video")
         if not os.path.exists(video_dir):
             os.mkdir(video_dir)
@@ -159,7 +165,7 @@ class DoubanBackuper(object):
             bsp = bs.BeautifulSoup(resp.content)
             next_pages = bsp.findAll("link", attrs={"rel": "next"})
             if len(next_pages) > 0:
-                url = next_pages[0].attrMap["href"]
+                url = "%s%s" % (self.movie_sub_domain, next_pages[0].attrMap["href"])
             else:
                 url = None
             # find all books in this page
@@ -199,9 +205,9 @@ class DoubanBackuper(object):
             fp.write(buf.encode("utf-8"))
 
     def backup_music(self):
-        listened_url = "https://music.douban.com/people/%s/collect" % (self.username,)
-        wish_url = "https://music.douban.com/people/%s/wish" % (self.username,)
-        listening_url = "https://music.douban.com/people/%s/do" % (self.username,)
+        listened_url = "%s/people/%s/collect" % (self.music_sub_domain, self.username)
+        wish_url = "%s/people/%s/wish" % (self.music_sub_domain, self.username)
+        listening_url = "%s/people/%s/do" % (self.music_sub_domain, self.username)
         music_dir = os.path.join(self.root, "music")
         if not os.path.exists(music_dir):
             os.mkdir(music_dir)
@@ -261,7 +267,7 @@ class DoubanBackuper(object):
             fp.write(buf.encode("utf-8"))
 
     def backup_doulist(self):
-        root_url = "https://www.douban.com/people/%s/doulists/all" % (self.username,)
+        root_url = "%s/people/%s/doulists/all" % (self.domain, self.username)
         self._backup_doulist(root_url)
 
     def _backup_doulist(self, url):
@@ -276,7 +282,7 @@ class DoubanBackuper(object):
             bsp = bs.BeautifulSoup(resp.content)
             next_pages = bsp.findAll("link", attrs={"rel": "next"})
             if len(next_pages) > 0:
-                url = "https://www.douban.com%s" % (next_pages[0].attrMap["href"],)
+                url = "%s%s" % (self.domain, next_pages[0].attrMap["href"],)
             else:
                 url = None
             doulist = bsp.find("ul", attrs={"class": "doulist-list"})
@@ -303,7 +309,10 @@ class DoubanBackuper(object):
                         lst_url = None
                     doulist_items = bsp.findAll("div", attrs={"class": "doulist-item"})
                     for item in doulist_items:
-                        item_title = item.find("div", attrs={"class": "title"}).find("a")
+                        item_title = item.find("div", attrs={"class": "title"})
+                        if not item_title:
+                            continue
+                        item_title = item_title.find('a')
                         item_name = item_title.contents[0].strip()
                         item_url = item_title.attrs[0][1]
                         buf = buf + "%s | %s\n" % (item_name, item_url)
@@ -316,7 +325,7 @@ class DoubanBackuper(object):
         if not os.path.exists(note_dir):
             os.mkdir(note_dir)
         buf = ""
-        url = "https://www.douban.com/people/%s/notes" % (self.username,)
+        url = "%s/people/%s/notes" % (self.domain, self.username)
         while url != None:
             resp = self._get_with_cookie(url)
             if resp is None:
@@ -337,7 +346,7 @@ class DoubanBackuper(object):
                 link = note.attrMap["data-url"]
                 rsp = self._get_with_cookie(link)
                 bp = bs.BeautifulSoup(rsp.content)
-                contents = bp.find("div", attrs={"class": "note", "id": "link-report"}).contents
+                contents = bp.find("div", attrs={"id": "link-report"}).contents
                 content = ""
                 for ele in contents:
                     content += str(ele)

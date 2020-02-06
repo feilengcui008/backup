@@ -1,0 +1,14 @@
+
+<div class="note"><h2>PaaS</h2><p>PaaS是什么？怎么做？我想现在也没有一个公司或者开源项目能够给出统一的回答。PaaS本身就应该是面向场景的，它需要上层模型（应用模型和workflow），即使是各公司内部的PaaS也都受限于各种原因（业务场景、研发流程、IDC等）在上层模型上有自己的特点，简单给k8s什么的加个ui，还是大量照搬k8s原生的概念（比如deployment）绝不是一个理想易用的PaaS，典型例子openshift。K8s这些概念抽象得很好，但是并不是研发和运维共同native，而是运维native的，对研发来说并不是最好的概念。对于研发来说，我可能要上线的是一个应用，而不是一个deployment，概念的区别和定位一下就出来了。</p><p>公司搞一个”通用“的统一PaaS就够了吗？显然不是。业务场景的多样性和复杂性，以及它们对研发运维流程的特殊要求，决定了垂类PaaS必定会存在的，比如机器学习平台。我可能底层还是基于公司的统一的PaaS，但是上层模型一定是不一样的，搞机器学习的算法工程师一定是需要一套顺手的workflow的，这一套workflow跟通常的研发相比，一定是有自己的特定要求的。其他垂类PaaS，比如针对web类型应用的，针对异构计算的，针对金融场景的......</p><h2>服务管理</h2><p>服务这个词概念很模糊，这里定义为一组容器，类似k8s的deployment或者service的概念，这里重点在管理。一组容器在那了，它可能由于机器节点宕机、网络故障、程序bug变得异常，我们需要修复；另外，容器资源随着业务流量的增减也需要自适应地变更，这些本质上都是在做一组容器（即服务）的管理，如何自动化地做这些事情？策略化。K8s的各种controller以及很多概念本质上就是各种服务管理策略，是面向自动化运维的，而不是面向研发。</p><h2>资源管理</h2><p>容器创建、调度、状态，机器节点的管理，网络，quota配额，混部资源QOS，单机隔离......这些才是资源管理的事情。资源管理把最基本的管好了，服务管理在策略层面去做更多的事情，分工明确，皆大欢喜。</p><p></p><p>给k8s加个ui一定不是个理想易用的PaaS（可能小公司无所谓），无论统一的PaaS还是垂类的PaaS一定需要有上层模型。另外，实际上k8s把资源管理和服务管理都做了，另一种思路是服务管理其实可以到更上层一些或者外围来做。广义PaaS摊子可以很大，不好做，垂类PaaS万岁。</p><p></p></div>
+<div class="mod-tags">
+<a href="https://www.douban.com/note/tags/PaaS?people=feilengcui008&amp;all=1" target="_blank">PaaS</a>
+<a href="https://www.douban.com/note/tags/Kubernetes?people=feilengcui008&amp;all=1" target="_blank">Kubernetes</a>
+</div>
+<div id="link-report_note">
+</div>
+<div class="copyright-claim original">
+<p>&copy; 本文版权归 <a href="https://www.douban.com/people/feilengcui008/">feilengcui008</a> 所有，任何形式转载请联系作者。</p>
+<p>&copy; <a href="https://help.douban.com/diary?app=main#t2-qs" target="_blank">了解版权计划</a></p>
+</div>
+<script type="text/javascript" src="https://img3.doubanio.com/f/shire/a14501790b4a2db257dc5be5e37d820e600703c6/js/report_dialog.js"></script>
+<link rel="stylesheet" type="text/css" href="https://img3.doubanio.com/f/shire/b45aa277f8b8df40596b96582dafb1ed0a899a64/css/report_dialog.css" />

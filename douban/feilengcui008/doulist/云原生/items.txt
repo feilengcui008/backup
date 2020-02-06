@@ -1,0 +1,8 @@
+Getting Started with Knative | https://book.douban.com/subject/34788027/
+云原生服务网格Istio：原理、实践、架构与源码解析 | https://book.douban.com/subject/34438220/
+微服务架构设计模式 | https://book.douban.com/subject/33425123/
+Kubernetes in Action中文版 | https://book.douban.com/subject/30418855/
+Spring Cloud微服务实战 | https://book.douban.com/subject/27025912/
+开源容器云OpenShift | https://book.douban.com/subject/27088186/
+Kubernetes权威指南 | https://book.douban.com/subject/26689184/
+Docker——容器与容器云（第2版） | https://book.douban.com/subject/26894736/
