@@ -112,6 +112,7 @@ alias tmuxl='tmux ls'
 alias tmuxk='tmux kill-session -t'
 alias jsonview='python -m json.tool'
 alias rr='cd ~/me/workspace'
+unsetopt correct_all
 
 
 ME=~/me
