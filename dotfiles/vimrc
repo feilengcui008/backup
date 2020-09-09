@@ -398,3 +398,9 @@ endfunction
 
 " python syntax check on save file
 autocmd BufWritePost *.py call Flake8()
+
+" vim-go
+let g:go_fmt_command = "goimports"
+autocmd BufWritePost *.go :GoMetaLinter
+let g:go_metalinter_autosave_enabled = []
+let g:go_metalinter_enabled = []
