@@ -124,6 +124,10 @@ Plugin 'rbgrouleff/bclose.vim'                                 " close current b
 Plugin 'jiangmiao/auto-pairs'                                  " auto pairs
 Plugin 'vim-syntastic/syntastic'                               " syntastic plugin
 Plugin 'nvie/vim-flake8'                                       " python flake8
+Plugin 'rust-lang/rust.vim'                                    " rust
+Plugin 'APZelos/blamer.nvim'                                   " gitlens
+Plugin 'luochen1990/rainbow'                                   " colorizing brackets
+Plugin 'jbgutierrez/vim-better-comments'                       " better comments
 call vundle#end()
 
 " reopen filetype plugin
@@ -352,6 +356,7 @@ noremap <C-S-i> :ClangFormat<CR>
 " nerdtree settings
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="-"
+let NERDTreeMapOpenInTab='\r'
 " double left click open files in new tab
 fun! s:MyNERDTreeSetting()
   fun! s:DoubleClickBehavior()
@@ -404,3 +409,9 @@ let g:go_fmt_command = "goimports"
 autocmd BufWritePost *.go :GoMetaLinter
 let g:go_metalinter_autosave_enabled = []
 let g:go_metalinter_enabled = []
+
+" git blamer
+let g:blamer_enabled = 1
+
+" rainbow
+let g:rainbow_active = 1
