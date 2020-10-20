@@ -405,13 +405,20 @@ endfunction
 autocmd BufWritePost *.py call Flake8()
 
 " vim-go
+"autocmd BufWritePost *.go :GoMetaLinter
+"let g:go_highlight_types = 1
+"let g:go_def_mode = 'godef'
 let g:go_fmt_command = "goimports"
-autocmd BufWritePost *.go :GoMetaLinter
 let g:go_metalinter_autosave_enabled = []
 let g:go_metalinter_enabled = []
+let g:go_def_mapping_enabled = 0
+nnoremap <C-n> :GoDef<cr>
+nnoremap <C-b> :<C-U>call go#def#StackPop(v:count1)<cr>
 
 " git blamer
-let g:blamer_enabled = 1
+let g:blamer_enabled = 0
+let g:blamer_delay = 400
+highlight Blamer guifg=lightgrey
 
 " rainbow
 let g:rainbow_active = 1
