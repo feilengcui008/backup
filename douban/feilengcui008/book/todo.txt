@@ -1,56 +1,66 @@
+亲密关系 | [美] 罗兰·米勒 (Rowland S. Miller) / 王伟平 译、彭凯平 校 / 人民邮电出版社 / 2015-6  | 2020-10-09
+中国历代政治得失 | 钱穆 / 生活·读书·新知三联书店 / 2001  | 2020-10-09
+局外人 | [法] 阿尔贝·加缪 / 柳鸣九 / 上海译文出版社 / 2010-8  | 2020-10-09
+项塔兰 | [澳] 格里高利·大卫·罗伯兹 / 黄中宪 / 华文出版社 / 2009-4  | 2020-10-09
+高效程序员的45个习惯 | Venkat Subramaniam、Andy Hunt / 钱安川、郑柯 / 人民邮电出版社 / 2010-01  | 2020-09-08
+成为技术领导者 | 杰拉尔德·温伯格 (Gerald M.Weinberg) / 余晟 / 电子工业出版社 / 2015-7-1  | 2020-08-29
+Linux内核观测技术BPF | [美]大卫·卡拉维拉（David Calavera）、[意]洛伦佐·丰塔纳（Lorenzo Fontana） / 狄卫华、范彬 / 机械工业出版社 / 2020-7-29  | 2020-08-25
+软件随想录 | Joel Spolsky / 阮一峰 / 人民邮电出版社 / 2009  | 2020-08-21
+人性中的善良天使 | [美]斯蒂芬·平克 / 安雯 / 中信出版社 / 2015-7  | 2020-08-21
+新一代垃圾回收器ZGC设计与实现 | 机械工业出版社 / 2019-8-1  | 2020-08-11
+孙子兵法 | 孙武 / 郭化若 / 上海古籍出版社 / 2006-7  | 2020-08-02
+MySQL技术内幕 | 姜承尧 / 机械工业出版社 / 2013-5  | 2020-07-28
+Kubeflow for Machine Learning | Boris Lublinsky、Ilan Filonenko、Richard Liu / O&#39;Reilly Media, Inc. / 2020-11-1  | 2020-07-18
+Transaction Processing | Jim Gray、Andreas Reuter / Morgan Kaufmann / 1992-09-15  | 2020-07-17
+Transactional Information Systems | Gerhard Weikum、Gottfried Vossen / Morgan Kaufmann / 2001-06-04  | 2020-07-17
+Programming with Types | Vlad Riscutia / Manning Publications / 2019-9-1  | 2020-07-12
+软件架构设计 | 余春龙 / 电子工业出版社 / 2019-2  | 2020-07-12
+Kubernetes源码剖析 | 郑东旭 / 电子工业出版社 / 2020-6  | 2020-07-12
+如何搞定一个难搞的人 | [美] 琼·艾丁、June Eding / 江璠 / 后浪丨上海文化出版社 / 2020-7  | 2020-07-01
+数据库系统内幕 | [美] 亚历克斯·彼得罗夫（Alex Petrov） / 黄鹏程、傅宇、张晨 / 机械工业出版社 / 2020-6-1  | 2020-06-26
+深度剖析Apache Dubbo核心技术内幕 | 翟陆续（加多） / 电子工业出版社  | 2020-06-15
+Building Machine Learning Pipelines | Catherine Nelson、Hannes Hapke / O&#39;Reilly Media, Inc. / 2020-9-8  | 2020-04-28
+Linux开源存储全栈详解：从Ceph到容器存储 | 英特尔亚太研发有限公司 编著 / 电子工业出版社 / 2019-9  | 2020-04-26
+多处理器编程的艺术 | （美）Maurice Herlihy、Nir Shavit / 金海、胡侃 / 机械工业出版社 / 2013-5  | 2020-04-26
+Is Parallel Programming Hard, And, If So, What Can You Do About It? |  | 2020-04-26
+人体 | 帕克 (Steve Parker) / 左焕琛 / 上海科学技术出版社 / 2010-8-1  | 2020-03-24
+人人都是产品经理 | 苏杰 / 电子工业出版社 / 2010年4月  | 2020-03-07
+中国国家治理的制度逻辑 | 周雪光 / 生活·读书·新知三联书店 / 2017-3-1  | 2020-02-10
+我们为什么会生病 | [美] 伦道夫·M·尼斯、[美] 乔治·C·威廉斯 / 易凡、禹宽平、傅贺（校）、叶凯雄（校） / 湖南科学技术出版社 / 2018-3  | 2020-02-09
+当我谈跑步时，我谈些什么（2015典藏版） | （日）村上春树 / 施小炜 / 南海出版公司 / 2015-9-1  | 2020-02-08
+把生命浪费在美好的事物上 | 吴晓波 / 浙江大学出版社 / 2015-5-1  | 2020-02-08
+Flink原理、实战与性能优化 | 张利兵 / 机械工业出版社 / 2019-5  | 2020-02-06
 Designing Event-Driven Systems | Ben Stopford  | 2020-01-21
-Programming with Types | Vlad Riscutia / Manning Publications / 2019-9-1  | 2020-01-19
-UNIX: A History and a Memoir | Brian Kernighan / Independently published / 2019-10-18  | 2020-01-18
-The Joy of Search | Daniel M. Russell / MIT Press  | 2020-01-08
 etcd技术内幕 | 百里燊 / 电子工业出版社 / 2018-7  | 2020-01-05
 云原生服务网格Istio：原理、实践、架构与源码解析 | 张超盟，章鑫，徐中虎，徐飞 / 电子工业出版社 / 2019-7  | 2019-12-20
-Programming Kubernetes | Michael Hausenblas、Stefan Schimanski / O&#39;Reilly Media / 2019-9-4  | 2019-12-17
 Cloud Native Data-Center Networking | Dinesh G. Dutt / O&#39;Reilly Media / 2019-12-17  | 2019-12-16
 俞军产品方法论 | 俞军 / 中信出版集团 / 2019-12-1  | 2019-12-15
-你当像鸟飞往你的山 | [美] 塔拉·韦斯特弗 / 任爱红 / 南海出版公司 / 2019-10-20  | 2019-12-08
 计算机体系结构 | John L. Hennessy、David A. Patterson / 机械工业出版社 / 2012-1  | 2019-12-08
-一本书看透股权架构 | 李利威 / 机械工业出版社 / 2019-5-1  | 2019-11-20
+一本书看透股权架构 | 李利威 / 机械工业出版社 / 2019-4  | 2019-11-20
 有限与无限的游戏 | [美]詹姆斯·卡斯 / 马小悟、余倩 / 电子工业出版社 / 2013-10  | 2019-11-09
-Software Engineering at Google | Titus Winters、Tom Manshreck、Hyrum K. Wright / O&#39;Reilly Media / 2020-3-3  | 2019-11-03
-Hands-On Machine Learning with Scikit-Learn and TensorFlow | Aurélien Géron / O&#39;Reilly Media / 2017-1-25  | 2019-08-01
-BPF Performance Tools | Brendan Gregg / Addison Wesley / 2019-11-4  | 2019-07-16
 The Senior Software Engineer | David Bryant Copeland / David Bryant Copeland / 2013-7  | 2019-07-15
 The Effective Engineer | Edmond Lau / The Effective Bookshelf, Palo Alto, CA. / 2015-3-19  | 2019-07-15
 Writing An Interpreter In Go | Thorsten Ball / Thorsten Ball / 2017-2-15  | 2019-04-19
 Writing A Compiler In Go | Thorsten Ball / Thorsten Ball / 2018-8-10  | 2019-04-19
-Linux Observability with BPF | David Calavera、Lorenzo Fontana / O&#39;Reilly Media / 2019-11-4  | 2019-04-19
-Database Internals | Alex Petrov / O&#39;Reilly Media / 2019-10-22  | 2019-04-19
-HTTP/2 in Action | Barry Pollard / Manning Publications  | 2019-04-03
-Python深度学习 | [美] 弗朗索瓦•肖莱 / 张亮 / 人民邮电出版社 / 2018-8  | 2019-03-17
 Inside SQLite | Sibsankar Haldar / O&#39;Reilly Media, Inc.,  | 2019-03-05
 A Primer on Memory Consistency and Cache Coherence | Mark Hill / Morgan &amp; Claypool / 2012-3-12  | 2019-02-25
 分布式机器学习：算法、理论与实践 | 刘铁岩、陈薇、王太峰、高飞 / 机械工业出版社 / 2018-10-20  | 2018-12-13
-Haskell趣学指南 | [斯洛文尼亚] Miran Lipovaca / 李亚舟、宋方睿 / 人民邮电出版社  | 2018-10-12
-分布式对象存储 | 胡世杰  | 2018-09-23
 A Philosophy of Software Design | John Ousterhout / Yaknyam Press / 2018-4-6  | 2018-09-12
-Streaming Systems | Tyler Akidau、Slava Chernyak、Reuven Lax / O&#39;Reilly Media / 2017-10-25  | 2018-08-31
-Principles of Computer System Design | Jerome H. Saltzer、M. Frans Kaashoek / Morgan Kaufmann / 2009-7-7  | 2018-08-17
 给忙碌者的天体物理学 | 尼尔·德格拉斯·泰森 / 孙正凡 / 未读·探索家·北京联合出版公司 / 2018-6  | 2018-08-13
 认识身体 | [英] 加文•弗朗西斯 / 马向涛 / 中信出版集团·见识城邦 / 2018-6  | 2018-08-13
-Git Internals | Peep Code Press / 2008  | 2018-07-08
-图解深度学习 | [日] 山下隆义 / 张弥 / 人民邮电出版社 / 2018-5  | 2018-06-17
 小镇喧嚣 | 吴毅 / 生活•读书•新知三联书店  生活书店出版有限公司 / 2018-2  | 2018-04-30
-公正 | 迈克尔•桑德尔 (Michael J. Sandel) / 朱慧玲 / 中信出版社 / 2012-11-30  | 2018-04-25
 论自由 | [英] 约翰·密尔 / 许宝骙 / 商务印书馆 / 2005-1  | 2018-04-08
-论美国的民主 | [法]托克维尔 / 董果良 / 商务印书馆 / 1989-1-1  | 2018-04-08
+论美国的民主 | [法] 托克维尔 / 董果良 / 商务印书馆 / 1989-1-1  | 2018-04-08
 离散数学及其应用（原书第5版） | [美] Kenneth H. Rosen / 袁崇义 / 机械工业出版社 / 2007-6  | 2018-03-29
-计算机程序设计艺术卷1：基本算法(英文版.第3版) | Donald E.Knuth / 人民邮电出版社 / 2010-10  | 2018-03-29
 具体数学 | Ronald L.Graham、Oren Patashnik、Donald E.Knuth / 张凡、张明尧 / 人民邮电出版社 / 2013-4-1  | 2018-03-29
 逃不开的经济周期 | 拉斯·特维德 / 董裕平 / 中信出版社 / 2012-11  | 2018-01-22
 美国宪政历程 | 任东来、陈伟、白雪峰 / 中国法制出版社 / 2014-1  | 2018-01-13
 1984 | [英] 乔治·奥威尔 / 刘绍铭 / 北京十月文艺出版社 / 2010-4-1  | 2018-01-08
 深入Linux内核架构 | Wolfgang Mauerer / 郭旭 / 人民邮电出版社 / 201005  | 2017-12-21
-Principles | Ray Dalio / Simon &amp; Schuster / 2017-9-19  | 2017-12-02
-通往奴役之路 | (英)弗里德利希·奥古斯特·哈耶克 / 王明毅、冯兴元、等 / 中国社会科学出版社 / 1997-08-01  | 2017-11-26
+通往奴役之路 | 弗里德利希・冯・哈耶克 / 王明毅、冯兴元 / 中国社会科学出版社 / 1997-08-01  | 2017-11-26
 挑战程序设计竞赛 | [日]秋叶拓哉、[日]岩田阳一、[日]北川宜稔 / 巫泽俊、庄俊元、李津羽 / 人民邮电出版社 / 2013-7-1  | 2017-11-21
 编码 | 查尔斯•佩措尔德 (Charles Petzold) / 左飞、薛佟佟 / 电子工业出版社 / 2012-10-1  | 2017-11-06
 人类简史 | [以色列] 尤瓦尔·赫拉利 / 林俊宏 / 中信出版社 / 2014-11  | 2017-10-31
-一本书读懂财报 | 肖星 / 浙江大学出版社 / 2014-7-1  | 2017-10-15
 深入理解LINUX网络内幕 | Christian Benvenuti / 东南大学出版社 / 2006-5  | 2017-10-09
 时间简史 | [英] 史蒂芬·霍金 / 许明贤、吴忠超 / 湖南科学技术出版社 / 2010-4  | 2017-10-09
 Linux/UNIX系统编程手册 | Michael Kerrisk / 孙剑 许从年 董健、孙余强 郭光伟 陈舸 / 人民邮电出版社 / 2014-1  | 2017-10-09

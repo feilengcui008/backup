@@ -1,0 +1,15 @@
+
+<div class="note"><p>通常情况下，PaaS托管的大部分负载都是无状态应用。但是对于一些依赖数据的特殊应用（比如分布式文件系统、zk、mysql），PaaS也应当提供相应的扩展能力，支持这些应用的托管。本质上讲，PaaS支持不同类型的工作负载托管的核心在策略，类似K8S的controller，这些策略适配了不同工作负载的工作方式。对于有状态应用托管，有两种方式。</p><h2>Operator</h2><p>基于K8S的CRD，工作负载的策略以一个Operator的形式实现。这种方式策略的所有逻辑完全实现在PaaS内部，对于不同的有状态应用，PaaS可能需要实现不同的Operator。</p><h2>回调</h2><p>策略由业务自身实现，以Server回调接口的形式暴露给PaaS，PaaS实现删除容器时的回调逻辑，负责通知业务当前容器的状态，由业务的策略Server负责自身业务状态的处理（比如数据搬迁），给PaaS返回成功后，PaaS才真正删除容器。这种方式的好处是，回调机制对于有状态应用是完全通用的，且对于大公司来说，内部大部分有状态应用（比如文件系统、数据库）都已经有了自己的管控系统，只需要实现一个旁路的策略Server即可，成本不高。</p><p></p><p>当然，基于回调的业务逻辑Server如果由PaaS来实现，其实就很类似Operator了。</p></div>
+<div class="mod-tags">
+<a href="https://www.douban.com/note/tags/Kubernetes?people=feilengcui008&amp;all=1" target="_blank">Kubernetes</a>
+<a href="https://www.douban.com/note/tags/PaaS?people=feilengcui008&amp;all=1" target="_blank">PaaS</a>
+<a href="https://www.douban.com/note/tags/%E5%AE%B9%E5%99%A8?people=feilengcui008&amp;all=1" target="_blank">容器</a>
+</div>
+<div id="link-report_note">
+</div>
+<div class="copyright-claim original">
+<p>&copy; 本文版权归 <a href="https://www.douban.com/people/feilengcui008/">feilengcui008</a> 所有，任何形式转载请联系作者。</p>
+<p>&copy; <a href="https://help.douban.com/diary?app=main#t2-qs" target="_blank">了解版权计划</a></p>
+</div>
+<script type="text/javascript" src="https://img3.doubanio.com/f/shire/072a17e1a083e85fab3d9bb187de25d07c97f544/js/report_dialog.js"></script>
+<link rel="stylesheet" type="text/css" href="https://img3.doubanio.com/f/shire/b45aa277f8b8df40596b96582dafb1ed0a899a64/css/report_dialog.css" />
